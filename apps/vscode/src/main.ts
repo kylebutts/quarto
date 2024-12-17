@@ -36,7 +36,7 @@ import { initQuartoContext } from "quarto-core";
 import { configuredQuartoPath } from "./core/quarto";
 import { activateDenoConfig } from "./providers/deno-config";
 //
-// Do not ship this. It's a test for Isabel..
+// Do not ship this. It's a test for Isabel.
 //
 import { testCommands } from "./providers/test";
 
