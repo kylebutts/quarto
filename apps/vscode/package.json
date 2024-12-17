@@ -439,6 +439,12 @@
         "command": "quarto.zoteroUnauthorized",
         "category": "Quarto",
         "title": "Zotero - Reconnect Web Library"
+      },
+      {
+        "command": "quarto.test",
+        "title": "Quarto Test",
+        "icon": "$(positron-test)",
+        "category": "Quarto"
       }
     ],
     "keybindings": [
@@ -605,6 +611,12 @@
         "key": "ctrl+k ctrl+f",
         "mac": "cmd+k cmd+f",
         "when": "editorTextFocus && editorLangId == quarto && !editorHasSelection"
+      },
+      {
+        "command": "quarto.test",
+        "key": "ctrl+shift+t",
+        "mac": "cmd+shift+t",
+        "when": "editorLangId == quarto"
       }
     ],
     "menus": {
@@ -625,6 +637,32 @@
           "command": "quarto.editInSourceMode",
           "when": "activeCustomEditorId == 'quarto.visualEditor'",
           "group": "navigation"
+        }
+      ],
+      "editor/actions/left": [
+        {
+          "command": "quarto.test",
+          "when": "editorLangId == quarto || editorLangId == markdown || activeCustomEditorId == 'quarto.visualEditor'",
+          "group": "yaya"
+        }
+      ],
+      "editor/actions/center": [
+        {
+          "command": "quarto.test",
+          "when": "editorLangId == quarto || editorLangId == markdown || activeCustomEditorId == 'quarto.visualEditor'",
+          "group": "yaya"
+        }
+      ],
+      "editor/actions/right": [
+        {
+          "command": "quarto.test",
+          "when": "editorLangId == quarto || editorLangId == markdown || activeCustomEditorId == 'quarto.visualEditor'",
+          "group": "yaya"
+        },
+        {
+          "command": "quarto.preview",
+          "when": "editorLangId == quarto || editorLangId == markdown || activeCustomEditorId == 'quarto.visualEditor'",
+          "group": "yaya"
         }
       ],
       "editor/title": [
